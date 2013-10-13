@@ -4,9 +4,12 @@ App = Ember.Application.create(
 );
 
 App.Router.map(function() {
-
-    this.resource('project');
-
+    this.resource('index');
+    this.resource('project', function(){
+        this.resource('about'),
+            this.resource('updates'),
+                this.resource('discuss')}
+    );
 });
 
 
@@ -26,7 +29,119 @@ App.ApplicationRoute = Ember.Route.extend({
 });
 
 
+App.ProjectRoute = Ember.Route.extend({
 
-$(document).ready(function(){
-    console.log('test')
+    model: function(){
+        return $.getJSON('http://api.randomuser.me/?results=4').then(function(data) {
+            return data.results
+        });
+    }
 });
+
+App.IndexRoute = Ember.Route.extend({
+
+    model: function(){return projects}
+
+});
+
+
+projects ={
+    "projects": [
+        {
+            "project": {
+                "id": "0",
+                "title": "Project 1",
+                "likes": "10",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        }
+    ]
+};

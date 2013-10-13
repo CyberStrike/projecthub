@@ -1,5 +1,8 @@
-
 //PH Button
+
+
+$text-color: white
+
 
 a.ph
   float: left
@@ -10,8 +13,8 @@ a.ph
 .ph
   position: absolute
   font-size: 1.5em
-  color: #ffffff
-  background: black
+  color: $text-color
+  background: $background-color
   font-weight: bold
   -webkit-transition: .3s
   -moz-transition: .3s
@@ -20,8 +23,23 @@ a.ph
   transition: .3s
 
 .ph:hover
-  color: black
-  background: white
+  color: $text-color !important
+  background: darken($background-color, 20%)
+
+
+
+.ph
+  img
+    height: auto
+    width: 40px
+
+#cbp-spmenu-s1
+  h3
+    background: $background-color
+    img
+      width: 100%
+
+
 
 
 
@@ -30,7 +48,7 @@ a.ph
 /* General styles for all menus */
 
 .cbp-spmenu 
-  background: #000000
+  background: $background-color
   position: fixed
 
 
@@ -101,7 +119,7 @@ a.ph
   left: -240px
 
 
-.cbp-spmenu-right 
+.cbp-spmenu-right
   right: -240px
 
 
@@ -109,25 +127,25 @@ a.ph
   left: 0px
 
 
-.cbp-spmenu-right.cbp-spmenu-open 
+.cbp-spmenu-right.cbp-spmenu-open
   right: 0px
 
 
 /* Horizontal menu that slides from the top or bottom */
 
-.cbp-spmenu-top 
+.cbp-spmenu-top
   top: -150px
 
 
-.cbp-spmenu-bottom 
+.cbp-spmenu-bottom
   bottom: -150px
 
 
-.cbp-spmenu-top.cbp-spmenu-open 
+.cbp-spmenu-top.cbp-spmenu-open
   top: 0px
 
 
-.cbp-spmenu-bottom.cbp-spmenu-open 
+.cbp-spmenu-bottom.cbp-spmenu-open
   bottom: 0px
 
 
@@ -139,11 +157,11 @@ a.ph
   left: 0
 
 
-.cbp-spmenu-push-toright 
+.cbp-spmenu-push-toright
   left: 240px
 
 
-.cbp-spmenu-push-toleft 
+.cbp-spmenu-push-toleft
   left: -240px
 
 /* Transitions */
