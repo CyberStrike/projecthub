@@ -25,7 +25,7 @@
 
     <!-- Menu -->
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-        <h3>{{#link-to 'index'}}<img src="projectiv-logo-small.png" alt="">{{/link-to}}</h3>
+         <h3>{{#link-to 'index'}}<img src="projectiv-logo-small.png" alt="">{{/link-to}}</h3>
 
         {{#link-to 'project'}}Project{{/link-to}}
         <a href="#">Zucchini garlic</a>
@@ -60,12 +60,13 @@
 
     <!--Header-->
     <div class="header">
-        <img class="prjHeader text-center img-responsive" src="gifpowbox-570x400.jpg" alt=""/>
-    </div>
-
-    <!--title-->
-    <div class="title text-center">
-        <h1>GifPow TV</h1>
+        <div class="projectHead">
+            <img class="img-aspect-ratio" src="data:image/gif;base64,R0lGODlhMgAVAPAAAP///wAAACH5BAEAAAAALAAAAAAyABUAAAIfhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8dTAQA7">
+            <!--title-->
+            <div class="title text-center">
+                <h1>GifPow TV</h1>
+            </div>
+        </div>
     </div>
 
     <!--Project Nav-->
@@ -77,27 +78,38 @@
         </div>
     </div>
 
+
     <!--Project Des-->
-    <div class="container" style="max-width: 500px; margin-top: 50px; margin-bottom: 50px">
-        <br>
-        <h4>
-            GIFPOW TV is the new trend in internet television that delivers the world of animated GIFs straight to your own living-room with GIFPOW's TV Box
-        </h4>
-    </div>
 
+    <div class="container">
+       <div class="row"  style="margin-top:4%">
+           <div class="col-md-6">
+               <!--Team-->
+               <div class="container text-center">
+                   {{#each}}
+                   <div class="col-xs-6 col-sm-3 col-md-4">
+                       <img class="img-circle" {{bindAttr src=user.picture}} height="125px">
+                       <p>
+                           {{user.name.first}}
+                           {{user.name.last}}
+                       </p>
+                   </div>
+                   {{/each}}
+               </div>
+           </div>
+           <div class="col-md-6">
+               <div class="container">
+                   <div>
+                       GIFPOW TV is the new trend in internet television that delivers the world of animated GIFs straight to your own living-room with GIFPOW's TV Box
+                       <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus earum et laborum nesciunt odit
+                           pariatur possimus quod vero? Aliquam aliquid atque blanditiis dicta error maxime odio perferendis
+                           suscipit ullam velit.
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
 
-    <!--Team-->
-    <div class="container text-center">
-        <h2>Team</h2>
-        <div class="col-sm-3 col-md-8"">
-            {{#each}}
-            <img class="img-circle" {{bindAttr src=user.picture}} height="125px">
-            <p>
-                {{user.name.first}}
-                {{user.name.last}}
-            </p>
-            {{/each}}
-        </div>
     </div>
 
 </script>

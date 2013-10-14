@@ -11,16 +11,14 @@ a.ph
 
 
 .ph
-  position: absolute
+  position: fixed
   font-size: 1.5em
   color: $text-color
   background: $background-color
   font-weight: bold
-  -webkit-transition: .3s
-  -moz-transition: .3s
-  -ms-transition: .3s
-  -o-transition: .3s
+  cursor: pointer
   transition: .3s
+  z-index: 999
 
 .ph:hover
   color: $text-color !important
@@ -38,8 +36,11 @@ a.ph
     background: $background-color
     img
       width: 100%
-
-
+    a:hover
+      background: none
+      color: none
+      margin-right: 0
+      text-decoration: none
 
 
 
@@ -47,10 +48,10 @@ a.ph
 
 /* General styles for all menus */
 
-.cbp-spmenu 
+.cbp-spmenu
   background: $background-color
   position: fixed
-
+  z-index: 9999
 
 .cbp-spmenu h3 
   color: #ffffff
@@ -68,10 +69,12 @@ a.ph
   font-weight: 300
 
 
-.cbp-spmenu a:hover 
+.cbp-spmenu a:hover
   background: #fff
-  color: #000000
-
+  color: $background-color
+  margin-right: 10%
+  transition: margin .3s
+  text-decoration: none
 
 .cbp-spmenu a:active 
   background: #000
