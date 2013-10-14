@@ -65,14 +65,14 @@
   margin: 0 auto;
 }
 
-/* line 7, ../pre/menu.sass */
+/* line 7, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 a.ph {
   float: left;
   display: block;
   padding: 0.95em;
 }
 
-/* line 13, ../pre/menu.sass */
+/* line 13, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .ph {
   position: absolute;
   font-size: 1.5em;
@@ -86,35 +86,35 @@ a.ph {
   transition: 0.3s;
 }
 
-/* line 25, ../pre/menu.sass */
+/* line 25, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .ph:hover {
   color: white !important;
   background: #24775b;
 }
 
-/* line 32, ../pre/menu.sass */
+/* line 32, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .ph img {
   height: auto;
   width: 40px;
 }
 
-/* line 37, ../pre/menu.sass */
+/* line 37, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 #cbp-spmenu-s1 h3 {
   background: #3cc597;
 }
-/* line 39, ../pre/menu.sass */
+/* line 39, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 #cbp-spmenu-s1 h3 img {
   width: 100%;
 }
 
 /* General styles for all menus */
-/* line 50, ../pre/menu.sass */
+/* line 50, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu {
   background: #3cc597;
   position: fixed;
 }
 
-/* line 55, ../pre/menu.sass */
+/* line 55, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu h3 {
   color: white;
   font-size: 1.9em;
@@ -124,7 +124,7 @@ a.ph {
   background: black;
 }
 
-/* line 64, ../pre/menu.sass */
+/* line 64, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu a {
   display: block;
   color: white;
@@ -132,20 +132,20 @@ a.ph {
   font-weight: 300;
 }
 
-/* line 71, ../pre/menu.sass */
+/* line 71, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu a:hover {
   background: white;
   color: black;
 }
 
-/* line 76, ../pre/menu.sass */
+/* line 76, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu a:active {
   background: black;
   color: white;
 }
 
 /* Orientation-dependent styles for the content of the menu */
-/* line 83, ../pre/menu.sass */
+/* line 83, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-vertical {
   width: 240px;
   height: 100%;
@@ -153,13 +153,13 @@ a.ph {
   z-index: 1000;
 }
 
-/* line 90, ../pre/menu.sass */
+/* line 90, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-vertical a {
   border-bottom: none;
   padding: 1em;
 }
 
-/* line 95, ../pre/menu.sass */
+/* line 95, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-horizontal {
   width: 100%;
   height: 150px;
@@ -168,14 +168,14 @@ a.ph {
   overflow: hidden;
 }
 
-/* line 103, ../pre/menu.sass */
+/* line 103, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-horizontal h3 {
   height: 100%;
   width: 20%;
   float: left;
 }
 
-/* line 109, ../pre/menu.sass */
+/* line 109, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-horizontal a {
   float: left;
   width: 20%;
@@ -184,67 +184,67 @@ a.ph {
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 118, ../pre/menu.sass */
+/* line 118, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-left {
   left: -240px;
 }
 
-/* line 122, ../pre/menu.sass */
+/* line 122, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-right {
   right: -240px;
 }
 
-/* line 126, ../pre/menu.sass */
+/* line 126, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0px;
 }
 
-/* line 130, ../pre/menu.sass */
+/* line 130, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px;
 }
 
 /* Horizontal menu that slides from the top or bottom */
-/* line 136, ../pre/menu.sass */
+/* line 136, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-top {
   top: -150px;
 }
 
-/* line 140, ../pre/menu.sass */
+/* line 140, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-bottom {
   bottom: -150px;
 }
 
-/* line 144, ../pre/menu.sass */
+/* line 144, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-top.cbp-spmenu-open {
   top: 0px;
 }
 
-/* line 148, ../pre/menu.sass */
+/* line 148, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-bottom.cbp-spmenu-open {
   bottom: 0px;
 }
 
 /* Push classes applied to the body */
-/* line 154, ../pre/menu.sass */
+/* line 154, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 160, ../pre/menu.sass */
+/* line 160, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-push-toright {
   left: 240px;
 }
 
-/* line 164, ../pre/menu.sass */
+/* line 164, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu-push-toleft {
   left: -240px;
 }
 
 /* Transitions */
-/* line 169, ../pre/menu.sass */
+/* line 169, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
 .cbp-spmenu,
 .cbp-spmenu-push {
   -webkit-transition: all 0.3s ease;
@@ -254,41 +254,41 @@ a.ph {
 
 /* Example media queries */
 @media screen and (max-width: 55.1875em) {
-  /* line 179, ../pre/menu.sass */
+  /* line 179, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-horizontal {
     font-size: 75%;
     height: 110px;
   }
 
-  /* line 183, ../pre/menu.sass */
+  /* line 183, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-top {
     top: -110px;
   }
 
-  /* line 186, ../pre/menu.sass */
+  /* line 186, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-bottom {
     bottom: -110px;
   }
 }
 @media screen and (max-height: 26.375em) {
-  /* line 192, ../pre/menu.sass */
+  /* line 192, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-vertical {
     font-size: 90%;
     width: 190px;
   }
 
-  /* line 196, ../pre/menu.sass */
+  /* line 196, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-left,
   .cbp-spmenu-push-toleft {
     left: -190px;
   }
 
-  /* line 200, ../pre/menu.sass */
+  /* line 200, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-right {
     right: -190px;
   }
 
-  /* line 203, ../pre/menu.sass */
+  /* line 203, C:/Users/Chris/Google Drive/Gnome Labs/GNMLBS/projectiv/static/pre/menu.sass */
   .cbp-spmenu-push-toright {
     left: 190px;
   }

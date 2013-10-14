@@ -1,10 +1,12 @@
 //Ember
 
-App = Ember.Application.create(
+window.App = Ember.Application.create({
+        ready: function(){}
+    }
+
 );
 
 App.Router.map(function() {
-    this.resource('index');
     this.resource('project', function(){
         this.resource('about'),
             this.resource('updates'),
@@ -14,7 +16,7 @@ App.Router.map(function() {
 
 
 App.ApplicationRoute = Ember.Route.extend({
-    actions:{
+     actions:{
         showMenu: function(){
             var $menuLeft = $('#cbp-spmenu-s1'),
             $showLeftPush = $('#showLeftPush'),
@@ -24,6 +26,16 @@ App.ApplicationRoute = Ember.Route.extend({
             $el.toggleClass('active');
             $body.toggleClass('cbp-spmenu-push-toright');
             $menuLeft.toggleClass('cbp-spmenu-open' );
+        },
+         hideMenu: function(){
+            var $menuLeft = $('#cbp-spmenu-s1'),
+            $showLeftPush = $('#showLeftPush'),
+            $body = $('body'),
+            $plogo = $('.ph');
+
+            $plogo.removeClass('active');
+            $body.removeClass('cbp-spmenu-push-toright');
+            $menuLeft.removeClass('cbp-spmenu-open' );
         }
     }
 });
@@ -32,8 +44,8 @@ App.ApplicationRoute = Ember.Route.extend({
 App.ProjectRoute = Ember.Route.extend({
 
     model: function(){
-        return $.getJSON('http://api.randomuser.me/?results=4').then(function(data) {
-            return data.results
+        return $.getJSON('team.json').then(function(data) {
+            return data
         });
     }
 });
@@ -52,6 +64,38 @@ projects ={
                 "id": "0",
                 "title": "Project 1",
                 "likes": "10",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
+                "img": "/projects/15.jpg"
+            }
+        },
+        {
+            "project": {
+                "id": "1",
+                "title": "Project 1",
+                "likes": "5",
                 "img": "/projects/15.jpg"
             }
         },
