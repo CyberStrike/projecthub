@@ -139,14 +139,14 @@ a.ph {
 }
 
 /* General styles for all menus */
-/* line 51, ../pre/menu.sass */
+/* line 50, ../pre/menu.sass */
 .cbp-spmenu {
   background: #3cc597;
   position: fixed;
   z-index: 9999;
 }
 
-/* line 56, ../pre/menu.sass */
+/* line 55, ../pre/menu.sass */
 .cbp-spmenu h3 {
   color: white;
   font-size: 1.9em;
@@ -156,7 +156,7 @@ a.ph {
   background: black;
 }
 
-/* line 65, ../pre/menu.sass */
+/* line 64, ../pre/menu.sass */
 .cbp-spmenu a {
   display: block;
   color: white;
@@ -164,7 +164,7 @@ a.ph {
   font-weight: 300;
 }
 
-/* line 72, ../pre/menu.sass */
+/* line 71, ../pre/menu.sass */
 .cbp-spmenu a:hover {
   background: white;
   color: #3cc597;
@@ -173,14 +173,14 @@ a.ph {
   text-decoration: none;
 }
 
-/* line 79, ../pre/menu.sass */
+/* line 78, ../pre/menu.sass */
 .cbp-spmenu a:active {
   background: black;
   color: white;
 }
 
 /* Orientation-dependent styles for the content of the menu */
-/* line 86, ../pre/menu.sass */
+/* line 85, ../pre/menu.sass */
 .cbp-spmenu-vertical {
   width: 240px;
   height: 100%;
@@ -188,13 +188,13 @@ a.ph {
   z-index: 1000;
 }
 
-/* line 93, ../pre/menu.sass */
+/* line 92, ../pre/menu.sass */
 .cbp-spmenu-vertical a {
   border-bottom: none;
   padding: 1em;
 }
 
-/* line 98, ../pre/menu.sass */
+/* line 97, ../pre/menu.sass */
 .cbp-spmenu-horizontal {
   width: 100%;
   height: 150px;
@@ -203,14 +203,14 @@ a.ph {
   overflow: hidden;
 }
 
-/* line 106, ../pre/menu.sass */
+/* line 105, ../pre/menu.sass */
 .cbp-spmenu-horizontal h3 {
   height: 100%;
   width: 20%;
   float: left;
 }
 
-/* line 112, ../pre/menu.sass */
+/* line 111, ../pre/menu.sass */
 .cbp-spmenu-horizontal a {
   float: left;
   width: 20%;
@@ -219,67 +219,67 @@ a.ph {
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 121, ../pre/menu.sass */
+/* line 120, ../pre/menu.sass */
 .cbp-spmenu-left {
   left: -240px;
 }
 
-/* line 125, ../pre/menu.sass */
+/* line 124, ../pre/menu.sass */
 .cbp-spmenu-right {
   right: -240px;
 }
 
-/* line 129, ../pre/menu.sass */
+/* line 128, ../pre/menu.sass */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0px;
 }
 
-/* line 133, ../pre/menu.sass */
+/* line 132, ../pre/menu.sass */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px;
 }
 
 /* Horizontal menu that slides from the top or bottom */
-/* line 139, ../pre/menu.sass */
+/* line 138, ../pre/menu.sass */
 .cbp-spmenu-top {
   top: -150px;
 }
 
-/* line 143, ../pre/menu.sass */
+/* line 142, ../pre/menu.sass */
 .cbp-spmenu-bottom {
   bottom: -150px;
 }
 
-/* line 147, ../pre/menu.sass */
+/* line 146, ../pre/menu.sass */
 .cbp-spmenu-top.cbp-spmenu-open {
   top: 0px;
 }
 
-/* line 151, ../pre/menu.sass */
+/* line 150, ../pre/menu.sass */
 .cbp-spmenu-bottom.cbp-spmenu-open {
   bottom: 0px;
 }
 
 /* Push classes applied to the body */
-/* line 157, ../pre/menu.sass */
+/* line 156, ../pre/menu.sass */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 163, ../pre/menu.sass */
+/* line 162, ../pre/menu.sass */
 .cbp-spmenu-push-toright {
   left: 240px;
 }
 
-/* line 167, ../pre/menu.sass */
+/* line 166, ../pre/menu.sass */
 .cbp-spmenu-push-toleft {
   left: -240px;
 }
 
 /* Transitions */
-/* line 172, ../pre/menu.sass */
+/* line 171, ../pre/menu.sass */
 .cbp-spmenu,
 .cbp-spmenu-push {
   -webkit-transition: all 0.3s ease;
@@ -289,41 +289,41 @@ a.ph {
 
 /* Example media queries */
 @media screen and (max-width: 55.1875em) {
-  /* line 182, ../pre/menu.sass */
+  /* line 181, ../pre/menu.sass */
   .cbp-spmenu-horizontal {
     font-size: 75%;
     height: 110px;
   }
 
-  /* line 186, ../pre/menu.sass */
+  /* line 185, ../pre/menu.sass */
   .cbp-spmenu-top {
     top: -110px;
   }
 
-  /* line 189, ../pre/menu.sass */
+  /* line 188, ../pre/menu.sass */
   .cbp-spmenu-bottom {
     bottom: -110px;
   }
 }
 @media screen and (max-height: 26.375em) {
-  /* line 195, ../pre/menu.sass */
+  /* line 194, ../pre/menu.sass */
   .cbp-spmenu-vertical {
     font-size: 90%;
     width: 190px;
   }
 
-  /* line 199, ../pre/menu.sass */
+  /* line 198, ../pre/menu.sass */
   .cbp-spmenu-left,
   .cbp-spmenu-push-toleft {
     left: -190px;
   }
 
-  /* line 203, ../pre/menu.sass */
+  /* line 202, ../pre/menu.sass */
   .cbp-spmenu-right {
     right: -190px;
   }
 
-  /* line 206, ../pre/menu.sass */
+  /* line 205, ../pre/menu.sass */
   .cbp-spmenu-push-toright {
     left: 190px;
   }
