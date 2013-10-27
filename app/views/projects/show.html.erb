@@ -1,0 +1,20 @@
+Find me in app/views/projects/show
+
+<%= @project.title %>
+<%= @project.body %>
+Submitted by <%= @project.name %>
+
+
+<!-- This displays all of the comments for this particular project. To change the way comments appear, go to app/views/comments/_comment -->
+<%= render partial: 'comments/comment', collection: @comments %>
+
+
+
+<!-- This is the form for users to create and submit a new comment -->
+<%= form_for [@project, @comment] do |f| %>
+<%= f.label :body %>
+<%= f.text_area :body %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit "Save" %>
+<% end %>

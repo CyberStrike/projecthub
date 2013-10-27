@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectiv</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  To change the navbar, go to app/views/layouts/application.html.erb
+
+  <!-- This is the code for the navbar, you can change the titles of the links ("home", "about") -->
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "About", about_path %></li>
+    <li><%= link_to "Popular Projects", projects_path %></li>
+    <li><%= link_to "New Projects", projects_path %></li>
+  </ul>
+
+<%= yield %>
+
+</div>
+
+</body>
+</html>
