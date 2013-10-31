@@ -1,12 +1,16 @@
+
 $font: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
 
+$color1: white
+$color2: #37c871
 
 
 body
   font-family: $font
-  background: #37c871
-  color: #ffffff
+  background: $color2
+  color: $color1
   text-align: center
+
 .logo
   padding-top: 3%
   width: 90%
@@ -16,12 +20,12 @@ body
   padding-top: 8%
 
 .input[placeholder]
-  color: #ffffff
+  color: $color1
 
 input.email
   font-family: $font
   background: transparent
-  color: #ffffff
+  color: $color1
   height: 45px
   width: 50%
   border: 5px dotted white
@@ -32,17 +36,52 @@ input.email
   line-height: 1.33
 
 input::-webkit-input-placeholder
-  color: white
+  color: $color1
 input::input-placeholder
-  color: white
+  color: $color1
 
 .button
-  padding-top: 3%
+  padding-top: 5%
+
 button.btn
-  background: transparent
+  background: none
   border: 4px solid white
   color: white
   padding: 12px 16px
   font-size: 26px
   line-height: 1.33
   border-radius: 6px
+
+button.btn:hover
+  background: $color1
+  color: $color2
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  -ms-transition: all 0.5s
+  -o-transition: all 0.5s
+  transition: all 0.5s
+
+.btn:focus
+  background: $color2
+  color: $color1
+
+
+.social
+  padding-top: 3%
+  display: block
+  overflow: auto
+
+
+.social a
+  padding: 32px
+  margin-right: 0.3125em
+  background-image: url('../img/social.svg')
+  background-size: 64px
+  background-repeat: no-repeat
+  background-color: none
+  display: inline-block
+  text-decoration: none
+  text-shadow: 0 -1px 2px #fff
+
+.social a.facebook
+  background-position: 0 100%
