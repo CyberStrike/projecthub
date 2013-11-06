@@ -4,6 +4,7 @@
   <title>Projectiv</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,16 +13,38 @@
   To change the navbar, go to app/views/layouts/application.html.erb
 
   <!-- This is the code for the navbar, you can change the titles of the links ("home", "about") -->
-  <ul>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About", about_path %></li>
-    <li><%= link_to "Popular Projects", projects_path %></li>
-    <li><%= link_to "New Projects", projects_path %></li>
-  </ul>
 
-<%= yield %>
+
+    <!--Menu Button-->
+    <a id="showMenu" class="menu-link ph"><img src="p-logo.png" height="139"></a>
+
+    <!-- Menu -->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+        <h3><img src="projectiv-logo-small.png" alt=""></h3>
+
+        <%=link_to "Home", root_path%>
+        <%=link_to "About", about_path%>
+        <%=link_to "Popular Projects", projects_path%>
+        <%=link_to 'New Projects', projects_path%>
+    </nav>
+</div>
+
+<div class="container hideMenu">
+
+
+  //template for each project card
+  <div class="container" style="padding-top: 6%;">
+    <div class="col-md-3">
+      <img src="http://placehold.it/250x150">
+      Project title <i class="glyphicon glyphicon-heart"></i> project likes
+    </div>
+  </div>
+
+
+  <%=yield%>
 
 </div>
+
 
 </body>
 </html>
